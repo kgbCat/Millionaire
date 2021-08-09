@@ -12,9 +12,7 @@ class RecordsTableViewController: UITableViewController {
     var records = Game.shared.records
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        print(records)
-        
+        super.viewDidLoad()        
         // register nib for recordCell
         let nib = UINib(nibName: "RecordTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "recordCell")
@@ -32,7 +30,7 @@ class RecordsTableViewController: UITableViewController {
         let record = records[indexPath.row]
 
         // Configure the cell...
-        cell.configure(date: record.date.description, score: record.record)
+        cell.configure(date: record.date, score: record.record)
 
         return cell
     }
