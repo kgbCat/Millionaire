@@ -1,32 +1,32 @@
 //
-//  CareTaker.swift
+//  QuestionsCareTaker.swift
 //  Millionaire
 //
-//  Created by Anna Delova on 8/9/21.
+//  Created by Anna Delova on 8/15/21.
 //
 
 import UIKit
 
-class CareTaker {
+class QuestionsCareTaker {
     private let encoder = JSONEncoder()
     private let decoder = JSONDecoder()
-    private let key = "Millionaire_key"
+    private let key = "MillionaireQuestions_key"
     
-    func saveRecords(record: [Record]) {
+    func saveQuestions(question: [Question]) {
         do {
-            let data = try encoder.encode(record)
+            let data = try encoder.encode(question)
             UserDefaults.standard.setValue(data, forKey: key)
         } catch {
             print(error.localizedDescription)
         }
     }
     
-    func loadecords() -> [Record]? {
+    func loadQuestions() -> [Question]? {
         guard let data = UserDefaults.standard.data(forKey: key) else {
             return nil
         }
         do {
-            return try decoder.decode([Record].self, from: data)
+            return try decoder.decode([Question].self, from: data)
         } catch {
             
             print(error.localizedDescription)
