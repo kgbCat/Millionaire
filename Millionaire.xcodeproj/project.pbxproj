@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		0A2204F626C0DB0F002F1B1F /* CareTaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2204F526C0DB0F002F1B1F /* CareTaker.swift */; };
 		0A2204F926C10FED002F1B1F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2204F826C10FED002F1B1F /* CustomButton.swift */; };
+		0A2204FE26C3C14C002F1B1F /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2204FD26C3C14C002F1B1F /* Difficulty.swift */; };
+		0A22050126C3E36F002F1B1F /* ShuffledQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22050026C3E36F002F1B1F /* ShuffledQuestions.swift */; };
+		0A22050826C3E6E8002F1B1F /* OrderedQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22050726C3E6E8002F1B1F /* OrderedQuestions.swift */; };
+		0A22050D26C3E7F6002F1B1F /* OrderedShuffledProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22050C26C3E7F6002F1B1F /* OrderedShuffledProtocol.swift */; };
+		0A22051326C62949002F1B1F /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22051226C62949002F1B1F /* Observable.swift */; };
+		0A22051726C8BCFD002F1B1F /* AddQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22051626C8BCFD002F1B1F /* AddQuestionViewController.swift */; };
+		0A22051A26C8C7F1002F1B1F /* QuestionsCareTaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22051926C8C7F1002F1B1F /* QuestionsCareTaker.swift */; };
 		0A4D50D126BD143800C3A19C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D50D026BD143800C3A19C /* AppDelegate.swift */; };
 		0A4D50D326BD143800C3A19C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D50D226BD143800C3A19C /* SceneDelegate.swift */; };
 		0A4D50D826BD143800C3A19C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4D50D626BD143800C3A19C /* Main.storyboard */; };
@@ -28,6 +35,13 @@
 /* Begin PBXFileReference section */
 		0A2204F526C0DB0F002F1B1F /* CareTaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareTaker.swift; sourceTree = "<group>"; };
 		0A2204F826C10FED002F1B1F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		0A2204FD26C3C14C002F1B1F /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		0A22050026C3E36F002F1B1F /* ShuffledQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffledQuestions.swift; sourceTree = "<group>"; };
+		0A22050726C3E6E8002F1B1F /* OrderedQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedQuestions.swift; sourceTree = "<group>"; };
+		0A22050C26C3E7F6002F1B1F /* OrderedShuffledProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedShuffledProtocol.swift; sourceTree = "<group>"; };
+		0A22051226C62949002F1B1F /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		0A22051626C8BCFD002F1B1F /* AddQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewController.swift; sourceTree = "<group>"; };
+		0A22051926C8C7F1002F1B1F /* QuestionsCareTaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsCareTaker.swift; sourceTree = "<group>"; };
 		0A4D50CD26BD143800C3A19C /* Millionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Millionaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4D50D026BD143800C3A19C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A4D50D226BD143800C3A19C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +71,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A2204FC26C3C138002F1B1F /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				0A2204FD26C3C14C002F1B1F /* Difficulty.swift */,
+				0A22050C26C3E7F6002F1B1F /* OrderedShuffledProtocol.swift */,
+				0A22050026C3E36F002F1B1F /* ShuffledQuestions.swift */,
+				0A22050726C3E6E8002F1B1F /* OrderedQuestions.swift */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
+		0A22051126C628D0002F1B1F /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				0A22051226C62949002F1B1F /* Observable.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
 		0A4D50C426BD143800C3A19C = {
 			isa = PBXGroup;
 			children = (
@@ -76,9 +109,12 @@
 		0A4D50CF26BD143800C3A19C /* Millionaire */ = {
 			isa = PBXGroup;
 			children = (
+				0A22051126C628D0002F1B1F /* Observer */,
+				0A2204FC26C3C138002F1B1F /* Strategy */,
 				0AEBAA8F26BE4E7B00BD0171 /* Views */,
 				0A4D50F726BD3B1500C3A19C /* GameSession.swift */,
 				0A2204F526C0DB0F002F1B1F /* CareTaker.swift */,
+				0A22051926C8C7F1002F1B1F /* QuestionsCareTaker.swift */,
 				0A4D50F226BD3A6B00C3A19C /* Singltone */,
 				0A4D50EA26BD1C0B00C3A19C /* Controllers */,
 				0A4D50E526BD146800C3A19C /* Models */,
@@ -106,6 +142,7 @@
 				0A4D50EB26BD1C3600C3A19C /* MainViewController.swift */,
 				0A4D50EE26BD1C5000C3A19C /* GameViewController.swift */,
 				0AEBAA8C26BE4E0100BD0171 /* RecordsTableViewController.swift */,
+				0A22051626C8BCFD002F1B1F /* AddQuestionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,18 +237,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A22051A26C8C7F1002F1B1F /* QuestionsCareTaker.swift in Sources */,
+				0A22050D26C3E7F6002F1B1F /* OrderedShuffledProtocol.swift in Sources */,
+				0A22050826C3E6E8002F1B1F /* OrderedQuestions.swift in Sources */,
+				0A22051726C8BCFD002F1B1F /* AddQuestionViewController.swift in Sources */,
 				0A2204F626C0DB0F002F1B1F /* CareTaker.swift in Sources */,
 				0A4D50E726BD147900C3A19C /* Question.swift in Sources */,
 				0A4D50F826BD3B1500C3A19C /* GameSession.swift in Sources */,
 				0AEBAA9A26C0D00100BD0171 /* Record.swift in Sources */,
 				0A4D50F426BD3A8400C3A19C /* Game.swift in Sources */,
+				0A22050126C3E36F002F1B1F /* ShuffledQuestions.swift in Sources */,
 				0AEBAA8D26BE4E0100BD0171 /* RecordsTableViewController.swift in Sources */,
 				0A4D50D126BD143800C3A19C /* AppDelegate.swift in Sources */,
 				0A4D50D326BD143800C3A19C /* SceneDelegate.swift in Sources */,
 				0A2204F926C10FED002F1B1F /* CustomButton.swift in Sources */,
+				0A22051326C62949002F1B1F /* Observable.swift in Sources */,
 				0A4D50EF26BD1C5000C3A19C /* GameViewController.swift in Sources */,
 				0A4D50EC26BD1C3600C3A19C /* MainViewController.swift in Sources */,
 				0AEBAA9226BE4E9B00BD0171 /* RecordTableViewCell.swift in Sources */,
+				0A2204FE26C3C14C002F1B1F /* Difficulty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
