@@ -18,9 +18,9 @@ class RecordTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func configure(date: String, score: Int) {
+    func configure(date: Date, score: Int) {
         
-        self.date.text = date
+        self.date.text = date.description
         self.message.text = "Вы выигарли \(score) рублей"
     }
     
