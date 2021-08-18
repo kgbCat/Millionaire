@@ -38,12 +38,19 @@ class GameViewController: UIViewController {
         // if the answer is correct
         if (check == true) && (i < questions.count - 1) {
             i += 1
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.game.displayQuestion(question: self.questions[self.i], label: self.questionLabel)
+            self.setupButton(buttons: self.buttonArr, question: self.questions[self.i])
+            }
             // display the next question and set buttons with variants
-            game.displayQuestion(question: questions[i], label: questionLabel)
-            setupButton(buttons: buttonArr, question: questions[i])
+//            game.displayQuestion(question: questions[i], label: questionLabel)
+//            setupButton(buttons: buttonArr, question: questions[i])
         } else if check == false {
             // save record and get back to main
-            dismiss(animated: true, completion: nil)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.dismiss(animated: true, completion: nil)
+            }
+//            dismiss(animated: true, completion: nil)
         } else {
             // all questions asked correctly
             // save record and get back to main
